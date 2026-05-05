@@ -789,7 +789,8 @@ h1 {
 .form-row.full,
 .privacy-check,
 .form-button,
-.form-disclaimer {
+.form-disclaimer,
+.form-success {
   grid-column: 1 / -1;
 }
 
@@ -849,6 +850,17 @@ textarea:focus {
   color: rgba(23, 26, 31, 0.58);
   font-size: 12px;
   line-height: 1.45;
+}
+
+.form-success {
+  margin: 0;
+  padding: 13px 14px;
+  border: 1px solid rgba(0, 149, 75, 0.3);
+  border-radius: 4px;
+  background: rgba(0, 149, 75, 0.1);
+  color: #056b39;
+  font-weight: 850;
+  line-height: 1.35;
 }
 
 .site-footer {

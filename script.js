@@ -42,3 +42,10 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
     target.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 });
+
+const params = new URLSearchParams(window.location.search);
+const successMessage = document.querySelector("#form-success");
+
+if (params.get("inviato") === "1" && successMessage) {
+  successMessage.hidden = false;
+}
